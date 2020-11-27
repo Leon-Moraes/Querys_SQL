@@ -11,13 +11,14 @@ create table tb_pizza(
     sabor varchar(255) not null,
     preco double(5,2) not null,
     tamanho char(1) default 'M',
+    disponivel boolean,
     id_categoria int,
      CONSTRAINT fk_categoria FOREIGN KEY (id_categoria) REFERENCES tb_categoria (id_categoria)
 );
 
 insert into tb_categoria (categoria) values ("Salgada"), ("Doce"), ("Vegana"), ("Gluten-Free"), ("Promoção");
 
-insert into tb_pizza (sabor, preco, tamanho, id_categoria) values ("Marguerita", 35.00, 'M',1), ("Romeu e Julieta", 50.00,'G', 2), ("Marguerita", 15.00,'P',1), ("Calabresa", 50.00,'G',1), ("Marinara",45.00, 'G', 3);
+insert into tb_pizza (sabor, preco, tamanho, id_categoria) values ("Marguerita", 35.00, 'M',true,1), ("Romeu e Julieta", 50.00,'G',true, 2), ("Marguerita", 15.00,'P',true,1), ("Calabresa", 50.00,'G',true,1), ("Marinara",45.00, 'G',true, 3);
 
 select * from tb_pizza where preco >= 45.00;
 
