@@ -31,17 +31,17 @@ public class PostagemController {
 //GET METHOD ----------------------------------------------------------------
 	
 	@GetMapping("/findAllPostagem")
-	public ResponseEntity<List<Postagem>> GetAll(){
+	public ResponseEntity<List<Postagem>> getAll(){
 		return ResponseEntity.ok(repository.findAll());
 	}
 	
 	@GetMapping("/findByIdPostagem/{id}")
-	public ResponseEntity<Optional<Postagem>> GetById(@PathVariable Long id) {
+	public ResponseEntity<Optional<Postagem>> getById(@PathVariable Long id) {
 		return ResponseEntity.ok(repository.findById(id));
 	}
 	
 	@GetMapping("findByDescricaoTitulo/{titulo}")
-	public ResponseEntity<List<Postagem>> GetByTitulo(@PathVariable String titulo) {
+	public ResponseEntity<List<Postagem>> getByTitulo(@PathVariable String titulo) {
 		return ResponseEntity.ok(repository.findAllByTituloContainingIgnoreCase(titulo));
 	}
 	
