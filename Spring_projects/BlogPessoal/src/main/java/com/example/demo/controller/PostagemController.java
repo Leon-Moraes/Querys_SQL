@@ -35,12 +35,12 @@ public class PostagemController {
 		return ResponseEntity.ok(repository.findAll());
 	}
 	
-	@GetMapping("/{id}")
+	@GetMapping("/findByIdPostagem/{id}")
 	public ResponseEntity<Optional<Postagem>> GetById(@PathVariable Long id) {
 		return ResponseEntity.ok(repository.findById(id));
 	}
 	
-	@GetMapping("titulo/{titulo}")
+	@GetMapping("findByDescricaoTitulo/{titulo}")
 	public ResponseEntity<List<Postagem>> GetByTitulo(@PathVariable String titulo) {
 		return ResponseEntity.ok(repository.findAllByTituloContainingIgnoreCase(titulo));
 	}
@@ -50,13 +50,13 @@ public class PostagemController {
 //POST/PUT METHOD ---------------------------------------------------------------
 	
 	
-	@PostMapping
+	@PostMapping("/postPostagem")
 	public ResponseEntity<Postagem> post(@RequestBody Postagem postagem){
 		return ResponseEntity.status(HttpStatus.CREATED).body(repository.save(postagem));
 		
 	}
 	
-	@PutMapping
+	@PutMapping("/putPostagem")
 	public ResponseEntity<Postagem> put(@RequestBody Postagem postagem){
 		return ResponseEntity.status(HttpStatus.OK).body(repository.save(postagem));
 		
@@ -66,7 +66,7 @@ public class PostagemController {
 	
 //DELETE METHOD
 	
-	@DeleteMapping("/{id}")
+	@DeleteMapping("deletePostagem/{id}")
 	public void delete(@PathVariable long id) {
 		repository.deleteById(id);
 	}
