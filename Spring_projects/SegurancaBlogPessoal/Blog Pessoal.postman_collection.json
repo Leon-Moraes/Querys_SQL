@@ -1,0 +1,1967 @@
+{
+	"info": {
+		"_postman_id": "4ea197a3-5859-4744-8d5c-9ad21ce1f032",
+		"name": "Blog Pessoal",
+		"description": "API do Projeto de blog pessoal\n\nContact Support:\n Name: Leonardo Moraes\n Email: Desenvolvedor Full Stack Java",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "postagens",
+			"item": [
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/postagens/deletePostagem/:id",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"postagens",
+								"deletePostagem",
+								":id"
+							],
+							"variable": [
+								{
+									"id": "c93b94f1-0f28-4954-b482-d86699b9ecdf",
+									"key": "id",
+									"value": "<long>",
+									"type": "string",
+									"description": "(Required) id"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Unauthorized",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/postagens/deletePostagem/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"postagens",
+										"deletePostagem",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id"
+										}
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "No Content",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/postagens/deletePostagem/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"postagens",
+										"deletePostagem",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id"
+										}
+									]
+								}
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Forbidden",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/postagens/deletePostagem/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"postagens",
+										"deletePostagem",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id"
+										}
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "OK",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/postagens/deletePostagem/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"postagens",
+										"deletePostagem",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "GetAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/postagens/findAllPostagem",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"postagens",
+								"findAllPostagem"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "OK",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/postagens/findAllPostagem",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"postagens",
+										"findAllPostagem"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "*/*"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Forbidden",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/postagens/findAllPostagem",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"postagens",
+										"findAllPostagem"
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Not Found",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/postagens/findAllPostagem",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"postagens",
+										"findAllPostagem"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Unauthorized",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/postagens/findAllPostagem",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"postagens",
+										"findAllPostagem"
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "GetByTitulo",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/postagens/findByDescricaoTitulo/:titulo",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"postagens",
+								"findByDescricaoTitulo",
+								":titulo"
+							],
+							"variable": [
+								{
+									"id": "4a4c2572-bbfa-484d-a896-176f5d9ef7db",
+									"key": "titulo",
+									"value": "<string>",
+									"type": "string",
+									"description": "(Required) titulo"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Forbidden",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/postagens/findByDescricaoTitulo/:titulo",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"postagens",
+										"findByDescricaoTitulo",
+										":titulo"
+									],
+									"variable": [
+										{
+											"key": "titulo"
+										}
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Not Found",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/postagens/findByDescricaoTitulo/:titulo",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"postagens",
+										"findByDescricaoTitulo",
+										":titulo"
+									],
+									"variable": [
+										{
+											"key": "titulo"
+										}
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "OK",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/postagens/findByDescricaoTitulo/:titulo",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"postagens",
+										"findByDescricaoTitulo",
+										":titulo"
+									],
+									"variable": [
+										{
+											"key": "titulo"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "*/*"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Unauthorized",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/postagens/findByDescricaoTitulo/:titulo",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"postagens",
+										"findByDescricaoTitulo",
+										":titulo"
+									],
+									"variable": [
+										{
+											"key": "titulo"
+										}
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "GetById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/postagens/findByIdPostagem/:id",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"postagens",
+								"findByIdPostagem",
+								":id"
+							],
+							"variable": [
+								{
+									"id": "1c6d9485-7651-469a-a138-f384e4fbf42c",
+									"key": "id",
+									"value": "<long>",
+									"type": "string",
+									"description": "(Required) id"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Not Found",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/postagens/findByIdPostagem/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"postagens",
+										"findByIdPostagem",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id"
+										}
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Unauthorized",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/postagens/findByIdPostagem/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"postagens",
+										"findByIdPostagem",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id"
+										}
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Forbidden",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/postagens/findByIdPostagem/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"postagens",
+										"findByIdPostagem",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id"
+										}
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "OK",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/postagens/findByIdPostagem/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"postagens",
+										"findByIdPostagem",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "*/*"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "post",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"data\": \"<dateTime>\",\n    \"id\": \"<integer>\",\n    \"tema\": {\n        \"descricao\": \"an\",\n        \"id\": -51792961,\n        \"postagem\": [\n            {\n                \"value\": \"<Circular reference to #/components/schemas/Postagem detected>\"\n            },\n            {\n                \"value\": \"<Circular reference to #/components/schemas/Postagem detected>\"\n            }\n        ]\n    },\n    \"texto\": \"<string>\",\n    \"titulo\": \"<string>\"\n}",
+							"options": {
+								"raw": {}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/postagens/postPostagem",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"postagens",
+								"postPostagem"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Unauthorized",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/postagens/postPostagem",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"postagens",
+										"postPostagem"
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Forbidden",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/postagens/postPostagem",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"postagens",
+										"postPostagem"
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Created",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/postagens/postPostagem",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"postagens",
+										"postPostagem"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "OK",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/postagens/postPostagem",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"postagens",
+										"postPostagem"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "*/*"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Not Found",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/postagens/postPostagem",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"postagens",
+										"postPostagem"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "put",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"data\": \"<dateTime>\",\n    \"id\": \"<integer>\",\n    \"tema\": {\n        \"descricao\": \"an\",\n        \"id\": -51792961,\n        \"postagem\": [\n            {\n                \"value\": \"<Circular reference to #/components/schemas/Postagem detected>\"\n            },\n            {\n                \"value\": \"<Circular reference to #/components/schemas/Postagem detected>\"\n            }\n        ]\n    },\n    \"texto\": \"<string>\",\n    \"titulo\": \"<string>\"\n}",
+							"options": {
+								"raw": {}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/postagens/putPostagem",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"postagens",
+								"putPostagem"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Not Found",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/postagens/putPostagem",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"postagens",
+										"putPostagem"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Unauthorized",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/postagens/putPostagem",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"postagens",
+										"putPostagem"
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Created",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/postagens/putPostagem",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"postagens",
+										"putPostagem"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "OK",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/postagens/putPostagem",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"postagens",
+										"putPostagem"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "*/*"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Forbidden",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/postagens/putPostagem",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"postagens",
+										"putPostagem"
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "tema",
+			"item": [
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/tema/deleteTema/:id",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"tema",
+								"deleteTema",
+								":id"
+							],
+							"variable": [
+								{
+									"id": "e7b5ba16-585b-4bd2-9f3a-ca60da457a0c",
+									"key": "id",
+									"value": "<long>",
+									"type": "string",
+									"description": "(Required) id"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "OK",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/tema/deleteTema/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"tema",
+										"deleteTema",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Unauthorized",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/tema/deleteTema/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"tema",
+										"deleteTema",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id"
+										}
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "No Content",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/tema/deleteTema/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"tema",
+										"deleteTema",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id"
+										}
+									]
+								}
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Forbidden",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/tema/deleteTema/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"tema",
+										"deleteTema",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id"
+										}
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "getAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/tema/findAllTema",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"tema",
+								"findAllTema"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "OK",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/tema/findAllTema",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"tema",
+										"findAllTema"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "*/*"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Unauthorized",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/tema/findAllTema",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"tema",
+										"findAllTema"
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Forbidden",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/tema/findAllTema",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"tema",
+										"findAllTema"
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Not Found",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/tema/findAllTema",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"tema",
+										"findAllTema"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "getByName",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/tema/findByDescricaoPostagem/:nome",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"tema",
+								"findByDescricaoPostagem",
+								":nome"
+							],
+							"variable": [
+								{
+									"id": "ebc91f18-1547-4f9f-b053-e5b5795289bc",
+									"key": "nome",
+									"value": "<string>",
+									"type": "string",
+									"description": "(Required) nome"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "OK",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/tema/findByDescricaoPostagem/:nome",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"tema",
+										"findByDescricaoPostagem",
+										":nome"
+									],
+									"variable": [
+										{
+											"key": "nome"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "*/*"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Forbidden",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/tema/findByDescricaoPostagem/:nome",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"tema",
+										"findByDescricaoPostagem",
+										":nome"
+									],
+									"variable": [
+										{
+											"key": "nome"
+										}
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Not Found",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/tema/findByDescricaoPostagem/:nome",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"tema",
+										"findByDescricaoPostagem",
+										":nome"
+									],
+									"variable": [
+										{
+											"key": "nome"
+										}
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Unauthorized",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/tema/findByDescricaoPostagem/:nome",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"tema",
+										"findByDescricaoPostagem",
+										":nome"
+									],
+									"variable": [
+										{
+											"key": "nome"
+										}
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "getById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/tema/findById/:id",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"tema",
+								"findById",
+								":id"
+							],
+							"variable": [
+								{
+									"id": "dcfceb92-b0a8-4cee-8eab-63fce63dc41a",
+									"key": "id",
+									"value": "<long>",
+									"type": "string",
+									"description": "(Required) id"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Forbidden",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/tema/findById/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"tema",
+										"findById",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id"
+										}
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "OK",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/tema/findById/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"tema",
+										"findById",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "*/*"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Unauthorized",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/tema/findById/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"tema",
+										"findById",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id"
+										}
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Not Found",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/tema/findById/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"tema",
+										"findById",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id"
+										}
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "post",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"descricao\": \"<string>\",\n    \"id\": \"<integer>\",\n    \"postagem\": [\n        {\n            \"data\": \"<dateTime>\",\n            \"id\": \"<integer>\",\n            \"tema\": {\n                \"descricao\": \"<string>\",\n                \"id\": \"<integer>\",\n                \"postagem\": [\n                    {\n                        \"value\": \"<Circular reference to #/components/schemas/Postagem detected>\"\n                    },\n                    {\n                        \"value\": \"<Circular reference to #/components/schemas/Postagem detected>\"\n                    }\n                ]\n            },\n            \"texto\": \"<string>\",\n            \"titulo\": \"<string>\"\n        },\n        {\n            \"data\": \"<dateTime>\",\n            \"id\": \"<integer>\",\n            \"tema\": {\n                \"descricao\": \"<string>\",\n                \"id\": \"<integer>\",\n                \"postagem\": [\n                    {\n                        \"value\": \"<Circular reference to #/components/schemas/Postagem detected>\"\n                    },\n                    {\n                        \"value\": \"<Circular reference to #/components/schemas/Postagem detected>\"\n                    }\n                ]\n            },\n            \"texto\": \"<string>\",\n            \"titulo\": \"<string>\"\n        }\n    ]\n}",
+							"options": {
+								"raw": {}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/tema/postTema",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"tema",
+								"postTema"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Created",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/tema/postTema",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"tema",
+										"postTema"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "OK",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/tema/postTema",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"tema",
+										"postTema"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "*/*"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Forbidden",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/tema/postTema",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"tema",
+										"postTema"
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Unauthorized",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/tema/postTema",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"tema",
+										"postTema"
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Not Found",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/tema/postTema",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"tema",
+										"postTema"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "put",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"descricao\": \"<string>\",\n    \"id\": \"<integer>\",\n    \"postagem\": [\n        {\n            \"data\": \"<dateTime>\",\n            \"id\": \"<integer>\",\n            \"tema\": {\n                \"descricao\": \"<string>\",\n                \"id\": \"<integer>\",\n                \"postagem\": [\n                    {\n                        \"value\": \"<Circular reference to #/components/schemas/Postagem detected>\"\n                    },\n                    {\n                        \"value\": \"<Circular reference to #/components/schemas/Postagem detected>\"\n                    }\n                ]\n            },\n            \"texto\": \"<string>\",\n            \"titulo\": \"<string>\"\n        },\n        {\n            \"data\": \"<dateTime>\",\n            \"id\": \"<integer>\",\n            \"tema\": {\n                \"descricao\": \"<string>\",\n                \"id\": \"<integer>\",\n                \"postagem\": [\n                    {\n                        \"value\": \"<Circular reference to #/components/schemas/Postagem detected>\"\n                    },\n                    {\n                        \"value\": \"<Circular reference to #/components/schemas/Postagem detected>\"\n                    }\n                ]\n            },\n            \"texto\": \"<string>\",\n            \"titulo\": \"<string>\"\n        }\n    ]\n}",
+							"options": {
+								"raw": {}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/tema/putTema",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"tema",
+								"putTema"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "OK",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/tema/putTema",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"tema",
+										"putTema"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "*/*"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Not Found",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/tema/putTema",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"tema",
+										"putTema"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Unauthorized",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/tema/putTema",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"tema",
+										"putTema"
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Created",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/tema/putTema",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"tema",
+										"putTema"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Forbidden",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/tema/putTema",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"tema",
+										"putTema"
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"variable": [
+		{
+			"id": "baseUrl",
+			"key": "baseUrl",
+			"value": "//localhost:8080/",
+			"type": "string"
+		}
+	],
+	"protocolProfileBehavior": {}
+}

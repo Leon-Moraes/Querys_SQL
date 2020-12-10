@@ -9,6 +9,16 @@
             "mainClass": "com.example.demo.BlogPessoalApplication",
             "projectName": "BlogPessoal",
             "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-BlogPessoalApplication<SegurancaBlogPessoal>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.example.demo.BlogPessoalApplication",
+            "projectName": "SegurancaBlogPessoal",
+            "args": ""
         }
     ]
 }
